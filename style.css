@@ -1,0 +1,133 @@
+.Navv {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.Navv .navbar {
+  background-image: linear-gradient(to right, #02132c, #6320ee);
+}
+.Navv .navbar-brand {
+  color: #f1f1f1;
+}
+.Navv .navbar-brand img {
+  height: 40px;
+  padding-left: 30px;
+}
+.Navv .navbar-nav li a,
+.Navv button {
+  color: #f1f1f1;
+  font-weight: 700;
+  float: right;
+  text-align: left;
+}
+.Navv .dropdown-menu {
+  background-image: linear-gradient(to right, hsl(296, 86%, 14%), #6320ee);
+}
+
+#hero {
+  width: 100%;
+  background: url(./backgroundwd.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  align-items: center;
+  display: flex;
+}
+#hero .container {
+  position: relative;
+  top: 0;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#hero .container .cardd {
+  align-items: center;
+  margin: auto;
+  top: 0;
+  position: relative;
+  padding: 20px;
+  display: flex;
+}
+#hero .container .cardd .card {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  position: relative;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  z-index: 1;
+}
+#hero .container .cardd .card p {
+  font-size: 20px;
+  color: #f1f1f1;
+}
+#hero .container .cardd .card .btn {
+  width: 200px;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#hero .container .cardd .card #Firstname {
+  font-size: 35px;
+  color: #f1f1f1;
+}
+#hero .container .cardd .card #Lastname {
+  font-size: 50px;
+  color: aqua;
+}
+#hero .container .gradpic {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+#hero .container .gradpic img {
+  height: 500px;
+  border-radius: 20px;
+  margin: auto;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Introduction {
+  padding: 100px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+#Introduction .row {
+  height: 500px;
+}
+#Introduction #skillsimg {
+  flex: 50%;
+  border: 1px solid whitesmoke;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background-color: rgb(48, 48, 46);
+  transition: 1s;
+}
+#Introduction #skillsimg img {
+  height: 128px;
+  margin-top: 8px;
+  padding: 2px;
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+}
+#Introduction #skillsimg img:hover {
+  transform: scale(1.3);
+}/*# sourceMappingURL=style.css.map */

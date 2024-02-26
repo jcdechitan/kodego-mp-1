@@ -4,127 +4,276 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <style>
-      #carouselExample {
-        height: 500px;
-        margin: auto;
+      body {
+        color: #f1f1f1;
+        background-color: #211a1d;
       }
-      .carousel-item img {
-        height: 500px;
-        width: 800px;
-        object-fit: cover;
+      @media (max-width: 767px) {
+        #hero {
+          height: 900px;
+        }
+        #Introduction {
+          height: 900px;
+          padding: 0;
+        }
+        .cont {
+          top: 0;
+          position: relative;
+          padding: 0;
+          height: 900px;
+        }
       }
     </style>
+    <!-- <style>
+      body {
+        color: #f1f1f1;
+        background-color: #211a1d;
+      }
+      .Navv {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+      .navbar {
+        background-image: linear-gradient(to right, #02132c, #6320ee);
+      }
+      .navbar-brand img {
+        height: 40px;
+        padding-left: 30px;
+      }
+      .navbar-nav li a,
+      button {
+        color: #f1f1f1;
+        font-weight: 700;
+        float: right;
+        text-align: left;
+      }
+      .navbar-brand {
+        color: #f1f1f1;
+      }
+      .dropdown-menu {
+        background-image: linear-gradient(
+          to right,
+          hsl(296, 86%, 14%),
+          #6320ee
+        );
+      }
+      /* MAIN CSS */
+      .hero {
+        height: 700px;
+        background: url(./backgroundwd.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: cover;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+        align-items: center;
+        display: flex;
+      }
+
+      .container {
+        position: relative;
+      }
+      .card p {
+        font-size: 20px;
+      }
+      .cardd {
+        align-items: center;
+        margin: auto;
+        position: relative;
+      }
+      .card {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        justify-content: center;
+        border: 1px solid whitesmoke;
+        backdrop-filter: blur(4px);
+        position: relative;
+        padding: 20px;
+        background-color: transparent;
+        border-radius: 20px;
+      }
+      .card #Firstname,
+      p {
+        color: #f1f1f1;
+      }
+      .card .btn {
+        width: 200px;
+        margin: auto;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+      .gradpic {
+        margin: auto;
+        align-items: center;
+        display: flex;
+        position: relative;
+      }
+      .gradpic img {
+        height: 500px;
+        border-radius: 20px;
+        margin: auto;
+        width: auto;
+      }
+      #Lastname {
+        font-size: 50px;
+        color: aqua;
+      }
+      #Firstname {
+        font-size: 35px;
+      }
+      /* INTRODUCTION SECTION */
+      .Introduction {
+        padding: 50px;
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+      }
+      #skillsimg img {
+        height: 128px;
+      }
+      #skillsimg {
+        display: ;
+      }
+    </style> -->
   </head>
   <body>
-    <nav class="navbar bg-primary navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <button class="btn btn-dark me-2" type="submit">Sign Up</button>
-            <button class="btn btn-dark" type="submit">Log in</button>
-          </form>
+    <!-- NAVIGATION -->
+    <section class="Navv">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#"
+            ><img
+              class="navbar-brand ms-5"
+              src="./8JedkR-LogoMakr.png"
+              type="button"
+              href="#"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto me-5 fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Introduction">Introduction</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Background
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./collegebg.html"
+                      >College Background</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./workexpbg.html"
+                      >Work Experience</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="btn btn-success"
+                  href="./contactss.html"
+                >
+                  Contact Me
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- MAIN HERO SECTION -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="cardd col-md-6 ms-auto pe-5">
+            <div class="card">
+              <span id="Lastname">Dechitan <br /></span>
+              <span id="Firstname">John Carlo</span>
+              <p>Your Partner in Digital Success.</p>
+              <button class="btn btn-dark" href="./DechitanJohnCarloResume.pdf">
+                See my Cv
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 ms-auto ps-5">
+            <div class="gradpic">
+              <img src="./grad.JPG" alt="Toga" class="img-fluid" />
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img
-            src="./Bugatti-Bolide-Hypercar-resize-1024x683.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="./fastest-cars-world-2021-luxe-digital@2x.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./car.webp" class="d-block w-100" alt="..." />
+    </section>
+    <!-- INTRODUCTION SECTION -->
+    <section id="Introduction">
+      <div class="cont p-5" type="container">
+        <div class="row">
+          <div class="col-md-8 d-grid align-items-center position-relative">
+            <h1 id="SPInt">Introduction</h1>
+            <p>
+              I'm John Carlo Dechitan. 25 year's old , currently living at Brgy.
+              Paciano Calamba city, Laguna. College graduate with a Bachelor's
+              Degree in Computer Engineering. Knowledge in HTML, CSS,
+              JavaScript, and other programming languages and familiarity with
+              tools such as Git, CMS platforms, and hosting services.
+            </p>
+            <h1>Objectives</h1>
+            <p>
+              Self-motivated and adaptable developer with applicable database
+              knowledge and coding skills. Organized programmer looking for an
+              opportunity to grow as a developer and support an ambitious
+              startup technology company. Collaborative communicator with
+              relationship building skills.
+            </p>
+          </div>
+          <div
+            class="col-md-4 justify-content-center d-flex align-items-center position-relative"
+          >
+            <div id="skillsbox">
+              <div id="skillsimg">
+                <img src="./engr-logo.png" alt="" />
+                <img src="./github-mark-white.png" alt="" />
+                <img src="./html-img.png" alt="" />
+                <img src="./css-logo.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
+    </section>
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

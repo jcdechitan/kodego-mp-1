@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .Headerbox {
+        width: 600px;
+        margin: auto;
+        border: 1px solid whitesmoke;
+        border-radius: 10px;
+        margin-top: 25px;
+      }
+      .boxx {
+        height: 150px;
+        display: flex;
+        padding-top: 20px;
+      }
+      @media (max-width: 605px) {
+        .collegeHeader {
+          display: inline;
+          justify-content: center;
+          display: flex;
+          font-size: 15px;
+        }
+        .Headerbox {
+          width: 80%;
+        }
+      }
+      .collegeHeader {
+        font-size: 50px;
+        text-align: center;
+        padding: 5px;
+        font-weight: 700;
+        color: aliceblue;
+      }
+      h1 {
+        padding: 10px;
+      }
+      p {
+        padding-top: 10px;
+      }
+      #collegeimg img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      #collegeimgg img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .contactss {
+        background: url(./backgroundwd.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        border: 1px solid white;
+        backdrop-filter: blur(4px);
+        background-color: transparent;
+        height: 500px;
+        width: 700px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+      }
+
+      input {
+        width: 200px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      textarea {
+        width: 200px;
+        height: 100px;
+        margin: 0 10px;
+      }
+      #sendBtn {
+        width: 100px;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+      }
+      #icons {
+        display: grid;
+        justify-content: center;
+      }
+      #icons a img {
+        height: 100px;
+        margin: 10px;
+      }
+      @media (max-width: 767px) {
+        #icons {
+          display: flex;
+        }
+        .contactText {
+          padding: 10px;
+        }
+        form {
+          display: ruby;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="Navv">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#"
+            ><img
+              class="navbar-brand ms-5"
+              src="./8JedkR-LogoMakr.png"
+              type="button"
+              href="#"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto me-5 fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Background
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./collegebg.html"
+                      >College Background</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./workexpbg.html"
+                      >Work Experience</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="contactss">
+      <div class="container">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contactText">
+                <h4>Contact me!</h4>
+                <h5>
+                  To connect with me you can <u>click</u> on the app icons or
+                  send a message to my email.
+                </h5>
+              </div>
+              <form action="">
+                <input type="Email" placeholder="Email" /><input
+                  type="Subject"
+                  placeholder="Subject"
+                /><textarea name="Message" id="Message" cols="23" rows="5">
+Your Idea</textarea
+                ><button id="sendBtn">Send</button>
+              </form>
+            </div>
+
+            <div class="col-md-4">
+              <div class="row">
+                <div id="icons">
+                  <a href="https://www.facebook.com/john.dechitan17/"
+                    ><img src="./fb-logo.webp" alt="facebook"
+                  /></a>
+                  <a
+                    href="https://www.linkedin.com/in/john-carlo-dechitan-014a33252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    ><img src="./linkedin-app-icon.png" alt="linkedin"
+                  /></a>
+                  <a
+                    href="https://www.instagram.com/johndechitan?igsh=MTlobDQ2MHpsZXRraw=="
+                    ><img src="./ig-instagram-icon.png" alt="instagram"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
